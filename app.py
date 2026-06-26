@@ -160,7 +160,7 @@ st.sidebar.header(
 
 year = st.sidebar.number_input(
     "Forecast Year",
-    min_value=2024,
+    min_value=2014,
     max_value=2035,
     value=2025
 )
