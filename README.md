@@ -19,7 +19,7 @@ https://sales-forcasting-app-debdut-nandy.streamlit.app/
 ---
 
 ## App Overview
-<img src="" width="700">
+<img src="Screenshot 2026-06-26 112404.png" width="700">
 
 ---
 
@@ -171,8 +171,8 @@ The application predicts expected future revenue.
 
 ---
 
-## 📌 Dashboard Highlights
-<img src="" width="700">
+## 📌Power BI Dataset Dashboard Highlights
+<img src="Screenshot 2026-06-26 094455.png" width="700">
 
 
 ### KPI Cards
