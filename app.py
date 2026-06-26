@@ -45,29 +45,78 @@ st.markdown(
 """
 <style>
 
+body {
+    color: #1f2937;
+}
+
+
 .main {
-    background-color:#f7f9fc;
+    background-color: #f7f9fc;
 }
 
 
-h1 {
-    color:#1f4e79;
-}
-
+/* KPI Cards */
 
 .card {
 
-background-color:white;
+    background-color: white;
 
-padding:20px;
+    padding: 20px;
 
-border-radius:15px;
+    border-radius: 15px;
 
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 
-text-align:center;
+    text-align: center;
+
+    color: #111827;
 
 }
+
+
+
+/* Card headings */
+
+.card h3 {
+
+    color: #2563eb;
+
+    font-size: 18px;
+
+}
+
+
+
+/* Card values */
+
+.card h2 {
+
+    color: #111827;
+
+    font-size: 30px;
+
+}
+
+
+
+/* Normal text */
+
+.stMarkdown {
+
+    color: #111827;
+
+}
+
+
+
+/* Success / info boxes */
+
+.stAlert {
+
+    color: #111827;
+
+}
+
 
 
 </style>
@@ -75,7 +124,6 @@ text-align:center;
 """,
 unsafe_allow_html=True
 )
-
 
 
 # -------------------------------
@@ -156,9 +204,11 @@ with col1:
     f"""
     <div class="card">
 
-    <h3>Last Sales</h3>
+   <h3>Last Sales</h3>
 
-    <h2>₹ {latest_sales['Sales']:,.0f}</h2>
+<h2>
+₹ {latest_sales['Sales']:,.0f}
+</h2>
 
     </div>
     """,
@@ -175,7 +225,9 @@ with col2:
 
     <h3>Model</h3>
 
-    <h2>Random Forest</h2>
+  <h2 style="color:#111827;">
+XGBoost
+</h2>
 
     </div>
     """,
@@ -190,7 +242,9 @@ with col3:
     """
     <div class="card">
 
-    <h3>Accuracy</h3>
+  <h2 style="color:#111827;">
+R² ~ 0.71
+</h2>
 
     <h2>R² ~ 0.71</h2>
 
