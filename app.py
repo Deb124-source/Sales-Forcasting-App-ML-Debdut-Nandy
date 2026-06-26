@@ -188,31 +188,34 @@ predict_btn = st.sidebar.button(
 )
 
 
-
 # -------------------------------
 # KPI Cards
 # -------------------------------
 
-
-col1,col2,col3 = st.columns(3)
-
+col1, col2, col3 = st.columns(3)
 
 
 with col1:
 
     st.markdown(
-    f"""
-    <div class="card">
+        f"""
+        <div class="card">
 
-   <h3>Last Sales</h3>
+        <h3 style="color:#2563eb;">
+        Last Sales
+        </h3>
 
-<h2>
-₹ {latest_sales['Sales']:,.0f}
-</h2>
+        <h2 style="color:#111827;">
+        ₹ {latest_sales['Sales']:,.0f}
+        </h2>
 
-    </div>
-    """,
-    unsafe_allow_html=True
+        <p style="color:#6b7280;">
+        Previous Month Sales
+        </p>
+
+        </div>
+        """,
+        unsafe_allow_html=True
     )
 
 
@@ -220,18 +223,24 @@ with col1:
 with col2:
 
     st.markdown(
-    """
-    <div class="card">
+        """
+        <div class="card">
 
-    <h3>Model</h3>
+        <h3 style="color:#2563eb;">
+        Model
+        </h3>
 
-  <h2 style="color:#111827;">
-XGBoost
-</h2>
+        <h2 style="color:#111827;">
+        XGBoost
+        </h2>
 
-    </div>
-    """,
-    unsafe_allow_html=True
+        <p style="color:#6b7280;">
+        Machine Learning Model
+        </p>
+
+        </div>
+        """,
+        unsafe_allow_html=True
     )
 
 
@@ -239,21 +248,25 @@ XGBoost
 with col3:
 
     st.markdown(
-    """
-    <div class="card">
+        """
+        <div class="card">
 
-  <h2 style="color:#111827;">
-R² ~ 0.71
-</h2>
+        <h3 style="color:#2563eb;">
+        Accuracy
+        </h3>
 
-    <h2>R² ~ 0.71</h2>
+        <h2 style="color:#111827;">
+        R² ~ 0.71
+        </h2>
 
-    </div>
-    """,
-    unsafe_allow_html=True
+        <p style="color:#6b7280;">
+        Model Performance
+        </p>
+
+        </div>
+        """,
+        unsafe_allow_html=True
     )
-
-
 
 st.divider()
 
